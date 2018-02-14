@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Aperto';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aperto'), url('ApertoRegular.otf') format('otf');
+}
+
+body {
+    font-family: "Aperto", SansSerif;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+li {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+a {
+    color: #262627;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #262627;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.color-light {
+    background-color: #F0ECE5;
+}
+
