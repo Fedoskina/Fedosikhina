@@ -1,0 +1,107 @@
+:root {
+    --main-font: 'Forum', cursive;
+    --quote-font: 'Lobster', cursive;
+    --main-font-color: #262627;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    grid-template-areas:
+            "promo-image header"
+            "promo-image form"
+            "promo-image footer"
+}
+
+.promo-image {
+    background-image: url("../img/letter.jpg");
+    background-position: center center;
+}
+
+.form {
+    grid-area: form;
+}
+
+
+/*form*/
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    outline:none;
+    width: 80%;
+}
+
+.form-item {
+    margin-top: 15px;
+}
+
+.form-item:first-child {
+    margin-top: 0;
+}
+
+.form-label {
+    font-size: 20px;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    -webkit-transition: .333s ease top, .333s ease opacity;
+    transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+    font-size: 20px;
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid #5e9bfc;
+}
+
+button {
+    font-size: 20px;
+    background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    margin: 30px 0;
+    padding: 10px 20px;
+    transition: all 0.25s ease 0s;
+}
+button:hover,
+button:active,
+button:focus {
+    border-color: #5e9bfc;
+    color: #5e9bfc;
+}
+
+.error {
+    border-bottom: 2px solid #f7406b;
+}
+
+@media only screen and (max-width:950px) {
+    .container {
+        margin: 20px;
+        margin-top: 0;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 20px;
+        grid-template-areas:
+                "header"
+                "promo-image"
+                "form"
+                "footer"
+    }
+}
+
