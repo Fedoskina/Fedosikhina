@@ -118,7 +118,11 @@ footer {
 }
 
 
-@media only screen and (max-width:950px) {
+@media screen and (max-width:950px) {
+    body {
+        font-size: 20px;
+    }
+
     .container {
         margin: 20px;
         margin-top: 0;
@@ -143,19 +147,21 @@ footer {
     }
 }
 
-@media only screen and (max-width:530px) {
+@media screen and (max-width:530px) {
+    body {
+        font-size: 20px;
+    }
+
     header {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         margin: 40px 20px 0 0;
     }
 
-    nav {
-        justify-self: start;
-    }
 
     nav ul {
         padding-left: 0;
+        justify-items: center;
     }
 }
